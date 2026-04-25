@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7fb;
+  color: #333;
+}
+
+.inventory-app {
+  padding: 20px;
+}
+
+.inventory-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.inventory-header p {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.inventory-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.item-card {
+  background: white;
+  border: 1px solid #f1d7e1;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-type {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #888;
+}
+
+.item-meta {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  gap: 16px;
+}
+
+.use-btn {
+  margin-top: 14px;
+  border: none;
+  background: #ff8fb1;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.use-btn:hover {
+  background: #ff739d;
+}
+
+.use-btn:disabled {
+  background: #d9b8c5;
+  cursor: not-allowed;
+}
+
+.feedback {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fff1f7;
+  color: #6b4f5d;
+  font-size: 14px;
+}
+
+.empty-state {
+  margin-top: 30px;
+  text-align: center;
+  color: #777;
+  font-size: 15px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>宠物设定</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <div class="settings-app">
+    <div class="settings-header">
+      <h1>宠物基础设定</h1>
+      <p>创建属于你的专属桌面宠物</p>
+    </div>
+
+    <div class="settings-form">
+      <label>你的昵称</label>
+      <input id="userName" type="text" placeholder="例如：小林" />
+
+      <label>宠物如何称呼你</label>
+      <input id="userNicknameByPet" type="text" placeholder="例如：主人 / 小林 / 宝宝" />
+
+      <label>宠物名字</label>
+      <input id="petName" type="text" placeholder="例如：团团" />
+
+      <label>宠物性格</label>
+      <select id="personality">
+        <option value="gentle">温柔型</option>
+        <option value="energetic">元气型</option>
+        <option value="tsundere">傲娇型</option>
+        <option value="cool">高冷型</option>
+        <option value="healing">治愈型</option>
+        <option value="smart">知性型</option>
+      </select>
+
+      <label>宠物类型</label>
+      <select id="petType">
+        <option value="pet">Q版宠物</option>
+        <option value="human">Q版人类</option>
+        <option value="spirit">小精灵</option>
+      </select>
+
+      <label>宠物外观</label>
+      <select id="petAppearance">
+        <option value="cat">像素猫咪</option>
+        <option value="dog">像素小狗</option>
+        <option value="rabbit">像素兔兔</option>
+      </select>
+
+      <label>主动程度</label>
+      <select id="activeLevel">
+        <option value="quiet">安静陪伴</option>
+        <option value="normal">适度互动</option>
+        <option value="active">主动陪伴</option>
+      </select>
+
+      <button id="saveButton">保存设定</button>
+      <div id="saveStatus" class="save-status"></div>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

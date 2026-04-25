@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>宠物聊天</title>
+  <link rel="stylesheet" href="chat.css" />
+</head>
+<body>
+  <div class="chat-app">
+    <div class="chat-header">
+      <div class="avatar">
+        <img id="chatPetAvatar" src="" alt="宠物头像" />
+      </div>
+      <div class="header-info">
+        <div class="title" id="chatTitle">你的桌面宠物</div>
+        <div class="subtitle" id="chatSubtitle">今天也陪着你</div>
+      </div>
+    </div>
+
+    <div class="relationship-bar">
+      <div class="relationship-info">
+        <span>亲密度：<strong id="intimacyValue">0</strong></span>
+        <span>关系阶段：<strong id="relationshipStage">初识</strong></span>
+        <span>当前状态：<strong id="moodLabel">普通</strong></span>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <button id="openSettingsButton">宠物设定</button>
+        <button id="openMemoryButton">查看记忆</button>
+        <button id="openInventoryButton">宠物道具</button>
+        <button id="openShopButton">宠物商城</button>
+      </div>
+
+      <div class="personality-bar">
+        <label for="personalitySelect">选择性格：</label>
+        <select id="personalitySelect">
+          <option value="gentle">温柔型</option>
+          <option value="energetic">元气型</option>
+          <option value="tsundere">傲娇型</option>
+          <option value="cool">高冷型</option>
+          <option value="healing">治愈型</option>
+          <option value="smart">知性型</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="message pet-message">嗨，我在这里陪你。你今天过得怎么样？</div>
+    </div>
+
+    <div class="chat-input-area">
+      <input id="messageInput" type="text" placeholder="和宠物聊点什么..." />
+      <button id="sendButton">发送</button>
+    </div>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>

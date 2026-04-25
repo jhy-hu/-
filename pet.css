@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  background: transparent;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: Arial, sans-serif;
+}
+
+.pet-container {
+  width: 240px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-app-region: drag;
+}
+
+.pet-body {
+  width: 170px;
+  height: 170px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: floatPet 2s ease-in-out infinite;
+  -webkit-app-region: no-drag;
+}
+
+.pet-image {
+  width: 156px;
+  height: 156px;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+.pet-tip {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  font-size: 13px;
+  color: #444;
+  max-width: 190px;
+  text-align: center;
+  -webkit-app-region: no-drag;
+}
+
+.bubble {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 190px;
+  min-height: 24px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #555;
+  border-radius: 16px;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: none;
+  z-index: 10;
+  -webkit-app-region: no-drag;
+}
+
+.bubble.show {
+  display: block;
+}
+
+@keyframes floatPet {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}

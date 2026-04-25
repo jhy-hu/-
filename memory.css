@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7fb;
+  color: #333;
+}
+
+.memory-app {
+  padding: 20px;
+}
+
+.memory-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.memory-header p {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.memory-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.memory-card {
+  background: white;
+  border: 1px solid #f1d7e1;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.memory-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.memory-type {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #ffe3ef;
+  color: #a14d6f;
+}
+
+.memory-content {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.memory-time {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #888;
+}
+
+.delete-btn {
+  border: none;
+  background: #ff8fb1;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #ff739d;
+}
+
+.empty-state {
+  margin-top: 30px;
+  text-align: center;
+  color: #777;
+  font-size: 15px;
+}

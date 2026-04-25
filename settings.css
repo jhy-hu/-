@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff7fb;
+  color: #333;
+}
+
+.settings-app {
+  padding: 24px;
+}
+
+.settings-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.settings-header p {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.settings-form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settings-form label {
+  font-size: 14px;
+  color: #444;
+  margin-top: 6px;
+}
+
+.settings-form input,
+.settings-form select {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.settings-form input:focus,
+.settings-form select:focus {
+  border-color: #ff8fb1;
+}
+
+#saveButton {
+  margin-top: 18px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #ff8fb1;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#saveButton:hover {
+  background: #ff739d;
+}
+
+.save-status {
+  margin-top: 8px;
+  min-height: 20px;
+  font-size: 14px;
+  color: #666;
+}
